@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+
+<style>
+    * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('pemandangan.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+
+}
+
+.atas{
+    text-align: center;
+    margin: 40px 0 40px 0;
+    font-size: 40px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.login .input-field{
+    width: 100%;
+    font-size: 17px;
+    padding: 0 25px;
+    margin-bottom: 25px;
+    border-radius: 35px;
+    border: none;
+    box-shadow: 0px 5px 10px black;
+    outline: none;
+    transition: 0.3s;
+}
+
+::placeholder {
+    font-weight: 500;
+    color: black;
+
+}
+
+.input-field:focus {
+    transform: scale(120%);
+}
+
+.forgot {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 35px;
+
+}
+
+section {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #fff;
+}
+
+#check {
+    margin-right: 10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+section a {
+    color: #fff;
+}
+
+.input-submit {
+    position: relative;
+}
+
+.submit-btn {
+    width: 100%;
+    height: 60px;
+    background: blueviolet;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s;
+
+}
+
+.input-submit label {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    color: #fff;
+    -webkit-animation: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+
+}
+
+.submit-btn:hover {
+    background: brown;
+    transform: scale(1.05,1);
+}
+
+.sign-up-link {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.sign-up-link a{
+    color: #fff;
+    font-weight: 600;
+
+}
+
+.sign-up-link p{
+    color: #fff;
+
+}
+
+
+</style>
+
+
+</head>
+<body>
+
+
+
+    <div class="login">
+        <div class="atas">
+            <header>login</header>
+        </div>
+        <div class="menu">
+            <input type="text" class="input-field" placeholder="email" autocomplete="off " required>
+        </div>
+        <div class="menu">
+            <input type="password" class="input-field" placeholder="password" autocomplete="off " required>
+        </div>
+        <div class="forgot">
+            <section>
+                <input type="checkbox" id="check">
+                <label for="check">lihat password</label>
+            </section>
+            <section>
+                <a href="#">forget password</a>
+            </section>
+        </div>
+        <div class="input-submit">
+            <button class="submit-btn" id="submit"></button>
+            <label for="submit">Sig IN</label>
+        </div>
+        <div class="sign-up-link">
+            <p>
+                belum punya akun ?
+            </p>
+        </div>
+    </div>
+</body>
+</html>
